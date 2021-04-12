@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-    background-image: url('img/back.png');
+    background-image: url('img/back.jpg');
     height: 100vh;
     background-size: 1200px;
     background-repeat: repeat;
@@ -54,7 +54,7 @@ main {
     color:white;
     text-shadow: 3px 3px 2px #000000FF;
     border: 10px solid black;
-    border-image-source: url(img/box.png);
+    border-image-source: url('img/box.jpg');
     border-image-slice: 50 fill;
     border-image-repeat: round;
     border-image-width: 24px;
@@ -150,7 +150,7 @@ li{
     -webkit-transition: all 0.10s;
     transition: all 0.10s;
     border: 10px solid black;
-    border-image-source: url(img/button.png);
+    border-image-source: url('img/button.png');
     border-image-slice: 35 30 fill;
     border-image-repeat: unset;
     border-image-width: 24px;
