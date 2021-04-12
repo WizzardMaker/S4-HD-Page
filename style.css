@@ -54,7 +54,7 @@ main {
     color:white;
     text-shadow: 3px 3px 2px #000000FF;
     border: 10px solid black;
-    border-image-source: url('img/box.jpg');
+    border-image-source: url('img/box.png');
     border-image-slice: 50 fill;
     border-image-repeat: round;
     border-image-width: 24px;
