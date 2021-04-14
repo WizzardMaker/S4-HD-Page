@@ -1,4 +1,5 @@
 @font-face { font-family: Packard Antique; src: url('fonts/Packard Antique Bold.ttf'); } 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 :root {
     --stroke: rgb(175, 151, 13);
@@ -50,9 +51,10 @@ main {
 }
 
 .s4-box{
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 19.5px;
     color:white;
-    text-shadow: 3px 3px 2px #000000FF;
+    text-shadow: 2px 2px 1px #000000FF;
     border: 10px solid black;
     border-image-source: url('img/box.png');
     border-image-slice: 50 fill;
@@ -116,13 +118,14 @@ a:hover {
 }
 
 .flex-center img {
-    transition: all 0.5s;
+    transition: transform 0.2s;
     width: 100%;
     border-style: none;
+    margin-bottom: -5px;
     /* height: fit-content; */
 }
 .flex-center img:hover {
-    transform: scale(5);
+    transform: scale(8) translateY(-10%);
     z-index: 9999;
 }
 .zoom-container {
@@ -132,6 +135,9 @@ a:hover {
     border-style: solid;
     border-radius: 5%;
     border-color: goldenrod;
+}
+.original-img {
+    image-rendering: pixelated;
 }
 
 li{
