@@ -138,12 +138,14 @@ a:hover {
 }
 .original-img {
     image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
-li{
+li {
     list-style: none;
- }
- li::before{
+}
+
+li::before {
     --size:20px;
     content: '';
     display: inline-block;
@@ -183,3 +185,16 @@ li{
      filter: saturate(0%);
  }
 
+
+ .disabled * {
+    color: gray;
+}
+
+hr {
+    border-width: 2px;
+    border-style: solid;
+    border-color: goldenrod;
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 1.5px rgba(0,0,0,0.8);
+}
