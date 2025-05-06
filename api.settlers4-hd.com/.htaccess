@@ -1,0 +1,11 @@
+RewriteEngine on
+RewriteBase /
+
+RewriteRule "patch/version/(.+)" "patch/release.php?command=version&asset=$1" [L]
+RewriteRule "patch/url/(.+)" "patch/release.php?command=url&asset=$1" [L]
+
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule "^patch/version$" "patch/release.php?command=version&%1" [L]
+
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule "^patch/url$" "patch/release.php?command=url&%1" [L]

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=4">
 
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
@@ -21,6 +21,12 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <meta property="og:site_name" content="Settlers 4 HD Patch">
+    <meta property="og:url" content="https://settlers4-hd.com/">
+    <meta property="og:title" content="The homepage for the Settlers 4 HD Patch project">
+    <meta property="og:description" content="Download the patch here or check the changelog to see current and upcoming changes!">
+    <meta property="og:type" content="website">
+    <meta name="og:image" itemprop="image" content="https://settlers4-hd.com/img/S4%20HD%20EN%20Logo%20REV2%20Made%20By%20SMALL.png">
 
     <meta name="viewport" content="width=1200px, initial-scale=1.0">
     <meta charset="UTF-8">
@@ -30,13 +36,16 @@
 
 <body>
     <main>
+		<!--<div class="s4-box banner">
+			We are currenlty working on a known bug regarding the installer, please be patient while we fix the error
+		</div>-->
         <div class="s4-box">
             <header>
-                <h1>Settlers 4 HD Patch</h1>
+				<img src="img/S4 HD EN Logo REV2 Made By SMALL.png" width="70%">
             </header>
             <p>Welcome to the Settlers 4 HD Patch page!</p>
             <p>This project aims to upscale every texture in Settlers 4 to HD using AI technology</p>
-
+			<p>Only the Settlers 4 History Edition is supported</p>
             <hr />
             <table>
                 <tr>
@@ -55,6 +64,15 @@
                     <td><a href="#credits">Credits</a></td>
                 </tr>
             </table>
+			
+            <table>
+                <tr>
+                    <th>Other links:</th>
+                </tr>
+                <tr>
+                    <td><a href="changelog.html">Changelog</a></td>
+                </tr>
+            </table>
         </div>
 
         <div class="s4-box" id="screenshots">
@@ -70,34 +88,42 @@
                 </div>
                 <div class="flex-center">
                     <div class="zoom-container">
-                        <img class="original-img" src="img/before/menu.png">
+                        <img class="original-img" src="img/before/00-MainMenu.png">
                     </div>
                     <div class="zoom-container">
-                        <img src="img/after/menu.jpg">
-                    </div>
-                </div>
-                <div class="flex-center">
-                    <div class="zoom-container">
-                        <img class="original-img" src="img/before/1.jpg">
-                    </div>
-                    <div class="zoom-container">
-                        <img src="img/after/1.jpg">
+                        <img src="img/after/00-MainMenu.png">
                     </div>
                 </div>
                 <div class="flex-center">
                     <div class="zoom-container">
-                        <img class="original-img" src="img/before/2.jpg">
+                        <img class="original-img" src="img/before/01-RandomMap.png">
                     </div>
                     <div class="zoom-container">
-                        <img src="img/after/2.jpg">
+                        <img src="img/after/01-RandomMap.png">
                     </div>
                 </div>
                 <div class="flex-center">
                     <div class="zoom-container">
-                        <img class="original-img" src="img/before/3.jpg">
+                        <img class="original-img" src="img/before/16-UI-HD.png">
                     </div>
                     <div class="zoom-container">
-                        <img src="img/after/3.jpg">
+                        <img src="img/after/16-UI-HD.png">
+                    </div>
+                </div>
+                <div class="flex-center">
+                    <div class="zoom-container">
+                        <img class="original-img" src="img/before/02-Map1.png">
+                    </div>
+                    <div class="zoom-container">
+                        <img src="img/after/02-Map1.png">
+                    </div>
+                </div>
+                <div class="flex-center">
+                    <div class="zoom-container">
+                        <img class="original-img" src="img/before/23-T-01.png">
+                    </div>
+                    <div class="zoom-container">
+                        <img src="img/after/23-T-01.png">
                     </div>
                 </div>
             </div>
@@ -112,33 +138,40 @@
 
                 <div>Custom UI Themes (per tribe setting):
                     <br>
-                    <img width="200px" src="img/custom-ui.gif">
+                    <img width="400px" src="img/features/S3-UI.png">
                 </div>
                 <div>Custom font support:
                     <br>
-                    <img src="img/font.gif">
+                    <img src="img/features/Fonts.gif">
                 </div>
                 <div>Custom team color* support:
                     <br>
-                    <img width="500px" src="img/teamColor.jpg">
+                    <img width="500px" src="img/features/Custom-Teams.png">
                     <br>
                     <span class="comment">*(local only)</span>
                 </div>
                 <div>Full color custom cursor:
                     <br>
-                    <img width="500px" src="img/cursor.gif">
+                    <img width="500px" style="image-rendering: pixelated;" src="img/cursor.gif">
                 </div>
-                <div>Labels for new buildings in the menu:
+                <div>New settings menu:
                     <br>
-                    <img src="img/label.png">
+                    <img width="500px" src="img/features/Settings-UI.png">
                 </div>
             </div>
         </div>
 
         <div class="s4-box" id="downloads">
             <h1>Download & Requirements</h1>
-            <p>This HD Patch comes in various flavours:
-            <ul>
+			<p>Current versions:<br/>[Plugin] 0.15.1<br/>[Assets] 0.10.0-Beta</p>
+			<p>Check out the changelogs <a href="changelog.html">here</a></p>
+			
+			<hr/>
+			<br/>
+			
+            <!--<p>This HD Patch comes in various flavours:
+            <ul>-->
+				<!--
                 <li class="disabled"><a href="#">4x texture upscaling</a>
                     <ul>
                         <li>All textures have a 4x resolution increase<br>This can cause a performance hit, if your
@@ -152,17 +185,20 @@
                     </div>
                     <br>
                 </li>
-                <li><a href="#">2x texture upscaling</a>
+                <li class="disabled"><a href="#">2x texture upscaling</a>
                     <ul>
                         <li>All textures have a 2x resolution increase</li>
                     </ul>
 
+				-->
                     <div>
-                        <a><button class="s4-button">Download</button></a><br>
-                        Closed Beta is currently underway - a public release will come soon
+						Download for the HD Patch Launcher (Current Version 0.13.0):
+                        <a href="https://settlers4-hd.com/data/patch/launcher/0.13.0/The_Settlers_IV_HD-Patch_Installer_Setup.exe"><button class="s4-button">Download</button></a><br>
+                        You do not need to download this if you have Settlers United, check your S4 settings to start the download!
                     </div>
                     <br>
-                </li>
+                <!--</li>
+				
                 <li class="disabled"><a href="#">HD Menu only</a>
                     <ul>
                         <li>This version only has the wide screen menu</li>
@@ -174,41 +210,52 @@
                     </div>
                     <br>
                 </li>
-            </ul>
+				
+            </ul>-->
             </p>
             <hr />
             <p>
-                The following PC specs are recommended but not necessarily mandatory:
+                The following minimum PC specs are needed:
             <ul>
                 <li>OS: Windows 64bit</li>
-                <li>Free Hard Drive Space: 2 GB</li>
-                <li>GPU: Anything with more than 1GB VRAM</li>
-                <li>CPU: AMD FX-6300</li>
-                <li>RAM: More than 4GB</li>
+                <li>Free Hard Drive Space: 10 GB</li>
+                <li>GPU: DirectX 11 support with 2GB dedicated VRAM or higher*</li>
+                <li>RAM: 8GB or higher</li>
+                <li>Settlers 4 History Edition</li>
             </ul>
+			<p class="comment">* If your card supports DirectX 11 but doesn't have 2GB dedicated VRAM (Like a Intel HD/Xe)
+			then you can still download the HD Patch but you have to use the Lite mode, which can be toggled in the main menu settings</p>
             </p>
 
         </div>
 
+        <div class="s4-box" id="support">
+            <h1>Contact & Support</h1>
+            <p>
+                Did you experience any problems? Write us an email at
+                <br/> <a href="mailto:support@settlers4-hd.com">support@settlers4-hd.com</a><br/>
+                If you experienced a crash, try to include the settlers 4 hd patch log file and a crashdump, if available, in the game folder under /plugins/HDPatch
+            </p>
+        </div>
         <div class="s4-box" id="credits">
             <h1>Credits</h1>
             <p>The Settlers 4 HD Patch would not be possible without these people:
             <ul>
                 <li><a target="_blank" href="https://github.com/WizzardMaker">WizzardMaker</a><br>Lead Developer of this
-                    Patch</li>
+                    patch
                 <li><a target="_blank" href="https://github.com/Cydra">Cydra</a><br>DirectX 11 Graphics Engineer of this
-                    Patch</li>
+                    patch</li>
+                <li><a target="_blank" href="https://github.com/kdsystem1337">kdsystem1337</a><br>Tester, motivational support, made SU HD Patch installer</li>
                 <li><a target="_blank" href="https://github.com/nyfrk">nyfrk</a><br>His Mod API and help laid the
                     foundation this patch
                     rests on</li>
                 <li><a target="_blank" href="https://discord.gg/6Tu7MMQVXh">The Settler 4 Community Patch
-                        Team</a><br>They helped with
-                    beta testing and motivating - check out the S4
-                    Community Patch <a target="_blank"
-                        href="https://github.com/Settlers4Modding/CommunityPatchLauncher">here!</a></li>
+                        Team</a><br>They helped with beta testing and motivating &amp; thanks to Litze for starting the spark for this project</li>
+					<li><a target="_blank" href="https://settlers-united.com/">Settlers United [SU]</a><br>The new home for a bug free Settlers 3 &amp; Settlers 4</li>
                 <li>Thanks to all beta tester that helped me remove all bugs</li>
             </ul>
             </p>
+			<br/> Want to say thank you? Sponsor the lead developer WizzardMaker:<br/> <iframe src="https://github.com/sponsors/WizzardMaker/button" title="Sponsor WizzardMaker" height="35" width="116" style="border: 0;"></iframe></li>
         </div>
     </main>
 </body>

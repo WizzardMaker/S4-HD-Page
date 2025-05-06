@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta name="viewport" content="width=1200px, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <title>S4 HD Patch</title>
+</head>
+
+<body>
+    <main>
+		<div class="s4-box" id="header">
+			<a class="float-left" href="/#downloads">Back</a>
+            <h1>Changelogs</h1>
+			<p>Welcome to the Settlers 4 HD Patch changelog!</p>
+			<p>Overall changelog of the HD Patch:</p>
+			<h3 class="left white">HD Patch additions</h3>
+			<ul>
+				<li>AI upscaled HD textures (units, buildings, ground, many more..)</li>
+				<li>Widescreen main menu</li>
+				<li>Improved text rendering</li>
+				<li>HD ingame menu</li>
+				<li>DirectX 11 rendering backend for improved color accuracy and FPS</li>
+				<li>Real unit shadows (No checkerboard shadows)</li>
+				<li>Improved (particle) effects</li>
+				<li>New full color mouse cursor</li>
+				<li>Texture pack support (to replace menus or other textures)</li>
+				<li>Labels for buildings in the menu</li>
+			</ul>
+			<h3 class="left white">HD Patch fixes</h3>
+			<ul>
+				<li>Fixed wrong color of the stats. menu circle of the white player</li>
+				<li>Fixed the selection icon of the last trojan beauty building which had a mayan building</li>
+                <li>Fixed the selection icon of the maya iron mine which had a older mayan building</li>
+            
+			</ul>
+			
+			<hr/>
+			
+			<h3 class="left white">Known bugs/Missing features:</h3>
+			<ul>
+				<li>Not all HDified cursors are implemented yet</li>
+				<li>Tutorial assets (Arrows, chat) aren't correctly rendered</li>
+                <li>Unit color not yet changeable in the in-game settings</li>
+            </ul>
+		</div>
+	    <div class="s4-box" id="CL2022-7">
+		    <h2>Changelog Preview</h2>
+		    <p><b>Plugin Version</b><br/>0.14.1 -> 0.15.0</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+				<li>Improved performance on systems with a NVIDIA gpu</li>
+				<li>Added experimental support for v-sync and frame limiting</li>
+				<li>Added new system to color individual textures - this enables the custom team color for elements like border stones, flags and the team ui elements<br/><img width="500px" src="img/changelog/borderStones.png"/><img width="500px" src="img/changelog/teamIcons.png"/></li>
+			</ul>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+				<li>Fixed possible CTD on startup on various systems</li>
+				<li>Fixed build progress not correctly displaying for ships and war machines</li>
+			</ul>
+		    <p><b>Plugin Version</b><br/>0.9.0-Beta -> 0.9.1-Beta</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+			    <li>Added more cursors</li>
+			</ul>
+		</div>
+	    <div class="s4-box" id="CL2022-6">
+		    <h2>Changelog 20.02.2022</h2>
+		    <p><b>Plugin Version</b><br/>0.14.0 -> 0.14.1</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+				<li>Added option to disable the orange chat text color of game notifications</li>
+				<li>Added C API to add your custom plugin settings to the main menu HD settings menu</li>
+			</ul>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+				<li>Fixed a possible CTD on startup</li>
+				<li>Added error message when an unsupported GPU is being used</li>
+			</ul>
+			<h3 class="left white">Changes:</h3>
+			<ul>
+				<li>Crash handler now always shows the 'additional information' panel before sending a crash report</li>
+			</ul>
+		</div>
+	    <div class="s4-box" id="CL2022-5">
+		    <h2>Changelog 14.02.2022</h2>
+		    <p><b>Installer Version</b><br/>0.12.3 -> 0.12.4</p>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+				<li>Fixed bug where the installer woulnd't correctly apply a delta patch when the base download was corrupt/missing</li>
+			</ul>
+		</div>
+	    <div class="s4-box" id="CL2022-4">
+            <h2>Changelog 13.02.2022</h2>
+            <p><b>Plugin Version</b><br/>0.13.1 -> 0.14.0</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+				<li>New crash reporting tool - this should help me help you with (voluntary) automatic crash report sending
+				    <ul>
+				        <li>This is still very experimental, please report any bugs or error messages related to this!</li>
+				    </ul>
+				</li>
+				<li>New and improved settings menu (WIP game settings added aswell - toggle audio settings directly in the main menu!)</li>
+				<li>Automatic lite mode activation</li>
+				<li>Added sounds for custom HD patch buttons</li>
+			</ul>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+				<li>Fixed rare CTD reason when skipping videos</li>
+				<li>Possible fix for a CTD on some GPUs</li>
+				<li>Fixed wrong settler team color mask calculation leading to misaligned colors on some viking settlers</li>
+				<li>Fixed S4 not closing in a timely manner</li>
+				<li>Videos that are not yet HD should now be visible (Bug: only sound when watching campaign videos)</li>
+			</ul>
+			<hr/>
+            <p><b>Asset Version</b><br/>0.8.1-Beta -> 0.9.0-Beta</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+				<li>Added old world ground textures</li>
+				<li>Improved main menu visuals (New HD Patch logo and cleaner background image)</li>
+			</ul>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+				<li>Fixed shadows on dark tribe</li>
+			</ul>
+	        <p><b>Installer Version</b><br/>0.9.2 -> 0.12.3</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+				<li>Added resumable downloads (even after closing the installer)</li>
+				<li>Added delta patching support (if you already have a downloaded version installed and a delta patch is available, then you only download the much smaller delta)</li>
+			</ul>
+        </div>
+	    <div class="s4-box" id="CL2022-3">
+            <h2>Changelog 15.01.2022</h2>
+            <p><b>Asset Version</b><br/>0.8-Beta -> 0.8.1-Beta</p>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+				<li>Added missing dark tribe texture</li>
+			</ul>
+		</div>
+		
+		<h1>Open Beta Release 14.01.2022</h1>
+		<hr style="max-width: 1500px;"/>
+		
+	    <div class="s4-box" id="CL2022-2">
+            <h2>Changelog 12.01.2022</h2>
+            <p><b>Plugin Version</b><br/>CLOSED BETA 0.13.1 -> OPEN BETA 0.13.3</p>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+				<li>Fixed video flickering regression bug</li>
+				<li>Fixed missing sprite behind game over ui element</li>
+				<li>Fixed various ui bugs due to missing/broken clearing</li>
+				<li>Fixed red lines on beaches on NVIDIA hardware</li>
+				<li>Fixed tooltip hidden under minimap/miniview (also asset change)</li>
+			</ul>
+		</div>
+	    <div class="s4-box" id="CL2022-1">
+            <h2>Changelog 09.01.2022</h2>
+            <p><b>Plugin Version</b><br/>CLOSED BETA 0.11.3 -> CLOSED BETA 0.13.1</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+				<li>New lite mode for Intel HD/Xe, or GPUs with less than 2GB VRAM systems</li>
+				<li>New settings menu in the main menu</li>
+				<li>New credits menu in the main menu [kdsystem1337]</li>
+				<li>New setting to disable the new selection box</li>
+				<li>New subtle emboss effect for the minimap</li>
+                <li>Added steps to f.o.w. levels (the deeper the object is in the f.o.w., the darker the object gets)</li>
+                <li>New DX11 direct HWND rendering instead of the (legacy) S4 rendering<br/>
+					This change brings the following improvements:
+					<ul>
+					<li>Better overall FPS</li>
+					<li>No more color banding due to RGB565 limitations</li>
+					</ul>
+				</li>
+            </ul>
+			<h3 class="left white">Changes:</h3>
+			<ul>
+                <li>New FPS counter algorithm</li>
+                <li>Changed language detection to use the game's language [kdsystem1337]</li>
+            </ul>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+                <li>Fixed music/sound setting slider and pinned slider clearing too much</li>
+                <li>Fixed missing team colors on some units while in the f.o.w.</li>
+                <li>Fixed black terrain flickering on first zoom out</li>
+                <li>Fixed wrong terrain texture lines</li>
+                <li>Fixed black line on right side of menu</li>
+                <li>Fixed 2 button zoom wrongfully triggering the selection box draw</li>
+                <li>Improved Non-HD -> HD mode change (no longer black terrain)</li>
+                <li>Fixed wrong font color/style of unit/building selection menu header</li>
+                <li>Fixed menu loading state showing wrong assets on the blackscreen [kdsystem1337]</li>
+            </ul>
+			<hr/>
+            <p><b>Asset Version</b><br/>CLOSED BETA 0.6-RC -> CLOSED BETA 0.7-RC</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+				<li>A new Settlers 3 inspired ingame UI was added (WIP and feedback is much appreciated!)</li>
+			</ul>
+			<h3 class="left white">Changes:</h3>
+			<ul>
+				<li>New, more discrete water waves</li>
+			</ul>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+                <li>Fixed double shadow (too black) of the roman and trojan lookout tower</li>
+                <li>Fixed miniview background bleed on some tribe menus</li>
+                <li>Fixed dots under all rome menu items</li>
+                <li>Added missing chat backgrounds</li>
+                <li>Removed broken shadow on 'pinned slider' [kdsystem1337]</li>
+            </ul>
+        </div>
+	
+	    <div class="s4-box" id="CL2021-2">
+            <h2>Changelog 19.12.2021</h2>
+            <p><b>Plugin Version</b><br/>CLOSED BETA 0.11.2 -> CLOSED BETA 0.11.3</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+                <li>Added experimental support for DX 11.0 feature level</li>
+                <li>Halved RAM usage of application</li>
+                <li>Added background loading of the most important packages while in the menu</li>
+                <li>Limited the package loader to stay within the RAM limits or else wait until space is free</li>
+            </ul>
+			<h3 class="left white">Changes:</h3>
+			<ul>
+                <li>Adapted AtlasGFXCollection to the .apak -> folder change (should improve loading times by ~35%)</li>
+            </ul>
+			<hr/>
+            <p><b>Asset Version</b><br/>CLOSED BETA 0.5-RC -> CLOSED BETA 0.6-RC</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+                <li>Embedded menu assets like the tree and flower into the background [kdsystem1337]</li>
+            </ul>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+                <li>Fixed the selection icon of the last trojan beauty building which had a mayan building (UBISOFT ERROR) [kdsystem1337]</li>
+                <li>Fixed the selection icon of the maya iron mine which had a older mayan building (UBISOFT ERROR) [kdsystem1337]</li>
+            </ul>
+			<h3 class="left white">Changes:</h3>
+			<ul>
+                <li>Upgraded the ingame menu assets to a newer AI revision</li>
+                <li>.apak files are now distributed as folders</li>
+            </ul>
+        </div>
+	
+        <div class="s4-box" id="CL2021">
+            <h2>Changelog 11.12.2021</h2>
+            <p><b>Plugin Version</b><br/>CLOSED BETA 0.11.1 -> CLOSED BETA 0.11.2</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+                <li>Added minimap camera rectangle</li>
+                <li><b>BREAKING CHANGE</b> Transitioned the language setting from "LANG-CULTURE" to just "LANG" ("de-DE" -> "de")</li>
+            </ul>
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+                <li>Fixed non HD movies being overdrawn from the menu</li>
+                <li>Fixed the missing color on vehicles</li>
+                <li>Updated the wording on a few text elements [kdsystem1337]</li>
+                <li>Updated the default color of purple and cyan to better match the original [kdsystem1337]</li>
+            </ul>
+			<hr/>
+            <p><b>Asset Version</b><br/>CLOSED BETA 0.4-RC -> CLOSED BETA 0.5-RC</p>
+			<h3 class="left white">Additions:</h3>
+			<ul>
+                <li>Added the dark tribe vehicles</li>
+                <li>Added motion blur to the dark tribe copters<br/><img width="350px" src="/img/changelog/motion-blur.png"/></li>
+            </ul>
+			
+			<h3 class="left white">Fixes:</h3>
+			<ul>
+                <li>Fixed the wrong color of the team color circle on the stats. menu (UBISOFT ERROR) [kdsystem1337]</li>
+                <li>Fixed wrong sizing of butterflies</li>
+                <li>Removed old/unused files</li>
+            </ul>
+        </div>
+    </main>
+</body>
+
+</html>

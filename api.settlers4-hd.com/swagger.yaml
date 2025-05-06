@@ -1,0 +1,72 @@
+openapi: '3.0.0'
+info:
+  description: ''
+  version: 1.0.0
+  title: Swagger Settlers 4 HD Patch
+  contact:
+    email: support@settlers4-hd.com
+servers:
+  - url: https://api.settlers4-hd.com/patch
+    description: Main server 
+tags:
+  - name: release
+    description: HD Patch asset release relevant API
+paths:
+  /version:
+    get:
+      summary: Retrieves the version of a specific asset
+      description: Retrieves the version based on the given branch and a specific type
+      operationId: getVersion
+      tags:
+        - release
+      parameters:
+        - in: query
+          name: asset
+          description: The type of asset. Currently only 'assets', 'plugin', 'modapi'
+          required: true
+          schema:
+            type: string
+            enum:
+              - assets
+              - plugin
+              - modapi
+        - name: branch
+          in: query
+          description: Branch specification - will default to 'release' when either no branch was specified or when the given branch does not exists
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Invalid parameters
+  /url:
+    get:
+      summary: Retrieves the url of a specific asset
+      description: Retrieves the version based on the given branch and a specific type
+      operationId: getURL
+      tags:
+        - release
+      parameters:
+        - name: asset
+          in: query
+          description: The type of asset. Currently only 'assets', 'plugin', 'modapi'
+          required: true
+          schema:
+            type: string
+            enum:
+              - assets
+              - plugin
+              - modapi
+        - name: branch
+          in: query
+          description: Branch specification - will default to 'release' when either no branch was specified or when the given branch does not exists
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+        '400':
+          description: Invalid parameters

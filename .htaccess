@@ -1,0 +1,4 @@
+SetEnvIfNoCase Request_URI . (?:zip)$ no-gzip dont-vary
+
+RewriteRule changelog.html changelog.php [L]
+RewriteRule index.html index.php [L]
